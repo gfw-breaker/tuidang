@@ -15,4 +15,14 @@ for channel in $channels ; do
 	python parse_tuidang.py $channel "$url"
 done
 
+base_url="https://github.com/gfw-breaker/tuidang/blob/master"
+for d in $(ls ../pages/); do
+    for f in $(ls -t ../pages/$d | grep 'md$'); do
+		a_path="../pages/$d/$f"
+		a_url="$base_url/pages/$d/$f"
+		if [ ! -f $a_path.png ]; then
+			qrencode -o $a_path.png -s 4 $a_url
+		fi
+    done
+done
 
