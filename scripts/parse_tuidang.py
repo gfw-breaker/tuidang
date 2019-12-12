@@ -62,7 +62,7 @@ for article in articles:
 	index_page += '#### [' + a_title + '](' + file_path + ') \n'
 
 
-index_file = open('../indexes/' + channel + '.md', 'w')
+index_file = open('../README.md', 'w')
 index_file.write(index_page)
 index_file.close()
 
