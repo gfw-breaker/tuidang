@@ -59,7 +59,7 @@ for article in articles:
 		print file_path
 		content = get_content(a_url)
 		macros.write_page(channel, name, file_path, a_title, a_url, content)
-	index_page += '#### [' + a_title + '](' + file_path + ') \n'
+	index_page += '#### [' + a_title + '](master/' + file_path + ') \n'
 
 
 index_file = open('../README.md', 'w')
