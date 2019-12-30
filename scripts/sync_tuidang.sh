@@ -3,6 +3,8 @@
 
 channels="nf3104"
 
+cd /tuidang/scripts
+
 ## create dirs
 for channel in $channels ; do
 	mkdir -p ../pages/$channel
@@ -28,3 +30,6 @@ for d in $(ls ../pages/); do
     done
 done
 
+git pull
+git add ../pages/
+gpush
