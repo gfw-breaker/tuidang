@@ -32,4 +32,5 @@ done
 
 git pull
 git add ../pages/
+git commit -a -m ok
 git push
