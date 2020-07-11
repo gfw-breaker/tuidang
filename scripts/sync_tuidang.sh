@@ -32,4 +32,4 @@ done
 
 git pull
 git add ../pages/
-gpush
+git push
